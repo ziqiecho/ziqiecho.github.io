@@ -105,6 +105,29 @@ body{
 	height:2px;
 	opacity: 0.6;
 }
+/*@keyframes expand-active{
+	0%{
+		width: 0%;
+	}
+	20%{
+		width: 18%;
+	}
+	40%{
+		width: 36%;
+	}
+	60%{
+		width: 54%;
+	}
+	80%{
+		width: 72%;
+	}
+	100%{
+		width: 90%;
+	}
+}
+.expand{
+	animation:expand-active 0.4s ease-in-out;
+}*/
 .ex-head{
 	position: absolute;
 	top: 5%;
@@ -228,6 +251,9 @@ body{
     left: 20%;
     top: 0;
     margin: 0 0 0 -24px;
+}
+.tag-box{
+	top: 0;
 }
 .tag-panel{
 	margin: 15px auto;
@@ -599,6 +625,40 @@ body{
  .timeline >li .tm-label img{
  	display: none;
  }
+}
+@media screen and (max-width: 675px){
+   .tag .tag-content-top,.tag-content-top > i{
+	display: none;
+}
+.tag-panel-1 div:first-child:hover .tag-content-left,
+.tag-panel-1 div:last-child:hover .tag-content-right,
+.tag-panel-2 div:first-child:hover .tag-content-left,
+.tag-panel-2 div:last-child:hover .tag-content-right,
+.tag-panel-3 div:first-child:hover .tag-content-bottom,
+.tag-panel-3 div:last-child:hover .tag-content-bottom{
+	opacity: 0;
+}
+#pagepiling :nth-child(3) .ex-head{
+	position: absolute;
+	top: 20%;
+	width: 100%;
+}
+#pagepiling :nth-child(3) .line-s{
+	position: absolute;
+	width: 50%;
+	height:2px;
+	opacity: 0.6;
+	left: 50%;
+	margin-left: -25%;
+}
+.timeline :nth-child(2),
+.timeline > li .tm-time,
+.timeline:before,
+.timeline >li .tm-label:after
+{
+	display: none;
+}
+
 }
    
  
